@@ -44,4 +44,9 @@ Este projeto será desenvolvido utilizando HTML, JavaScript e CSS puro. Para gar
    - Garanta que todas as páginas sejam acessíveis, seguindo as diretrizes de acessibilidade web (WCAG).
    - Utilize atributos `alt` para imagens e `aria-*` conforme necessário para componentes interativos.
 
+4. **Nome dos arquivos, pastas e branchs**
+   - index.html, styles.css, script.js para *arquivos*
+   - loginThays para *pastas*
+   - feat/[inicial do teu nome][inicial do nome da sua dupla]_[nome da coisa que tu tá fazendo(LoginPage)] para *branchs*
+
 Seguindo estas regras, garantimos que o projeto será consistente, de alta qualidade e fácil de manter. Bom trabalho a todos!
