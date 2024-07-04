@@ -1,0 +1,81 @@
+body{
+    background-image: linear-gradient(to right,  #082133, #00091B);
+    color: #B1B1BB;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container-form-login,
+.container-campos-login,
+.navegacao,
+.container-geral-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-geral-login{
+    height: 100vh;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container-campos-login{
+    height: 80px;
+    justify-content: space-between;
+}
+.permance-conectado{
+    margin: 10px 10px 10px 0px;
+    font-size: 0.9em;
+}
+#botao-entrar{
+    background-color: #8FA2B0;
+    color: #082133;
+    font-size: 0.85em;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+#botao-entrar,
+.container-campos-login input{
+    height: 34px;
+    width: 185px;
+    border-radius: 20px;
+    border-style: hidden;
+}
+
+.container-campos-login input{
+    background-color: #545E66;
+}
+.container-campos-login input::placeholder{
+    padding-left: 10px;
+    color: #999999;
+    font-size: 0.9em;
+}
+
+.container-campos-login label{
+    position: relative;
+}
+.container-campos-login img{
+    position: absolute;
+    right: 14px;
+    bottom: 13px;
+}
+
+.navegacao{
+    height: 40px;
+    justify-content: space-between;
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: #B1B1BB;
+}
+
+.permance-conectado{
+    align-self: flex-start;
+}
+
+.logo-empresa{
+    margin-top: 80px;
+}
