@@ -10,3 +10,4 @@ document.querySelector(".formulario-img__senha").addEventListener("click", (e) =
         e.target.src = "../../assets/eyeIcon.svg";
     }
 })
+

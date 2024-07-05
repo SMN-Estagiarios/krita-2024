@@ -8,6 +8,7 @@
     --button-background-color: #8FA2B0;
     --button-background-hover-color: #082133;
     --button-text-color: #082133;
+    --popup-background-color: #A11010;
 }
 
 *{
@@ -145,4 +146,18 @@ main{
     &:hover{
         text-decoration: underline;
     }
+}
+
+.popup-container{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--popup-background-color);
+    color: #fff;
+    padding: 12px;
+    margin-top: 12px;
 }
