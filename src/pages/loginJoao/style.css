@@ -20,19 +20,17 @@
 body, html{
     width: 100%;
     min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    display: grid;
+    place-items: center;
 }
 
 body{
     background: linear-gradient(#082133,#00091B);
     font-weight: 400;
+    grid-template-rows: auto 10%;
 }
 
 main{
-    min-height: calc(100vh - 80px);
     width: 60%;
     max-width: 280px;
     display: flex;
@@ -70,7 +68,7 @@ main{
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .formulario-input{
@@ -128,7 +126,7 @@ main{
     transition: 0.3s;
     cursor: pointer;
 
-    &:hover{
+    &:active{
         background-color: var(--button-background-hover-color);
         color: var(--button-background-color);
         transition: 0.3s;
