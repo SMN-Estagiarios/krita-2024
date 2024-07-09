@@ -1,38 +1,42 @@
 body {
     background-color: #13132c; 
     color: white;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: Arial, sans-serif;    
+    padding: 0;
     margin: 0;
 }
 
 .loginContainer {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
 }
 
-img{
-    margin-bottom:  0px;
+.LogoKrita{
+    width: 200px;
+    margin-bottom: -30px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    margin-top: 0%;
-    border: 1px;
+    margin-top: 6px;
+    display: block;
+    border: 1px solid;
     border-radius: 20px;
     box-sizing: border-box;
-    background-color: #798999 ;
+    background-color: #5f6366 ;
 }
 
 input::placeholder {
-    color: #cccccc;
+    color: #a5a1a1;
 }
 
 button {
@@ -44,9 +48,15 @@ button {
     border-radius: 20px;
     cursor: pointer;
     box-sizing: border-box;
-    margin-top: 10%;
+    display: block;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 button:hover {
     background-color: #a6adb4;
 }
+
+
+
