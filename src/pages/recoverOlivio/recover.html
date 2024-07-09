@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./recover.css" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/Favicon.png"
+      type="image/x-icon"
+    />
+    <title>Krita 2024 - Recuperar senha</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="loginContent">
+        <a href="../loginOlivio/login.html">
+          <img
+            class="logoKrita"
+            src="../../assets/krita 108.svg"
+            alt="Logo Krita"
+          />
+        </a>
+        <form class="recoverForm" action="">
+          <h2>REDEFINIR SENHA</h2>
+          <label class="formInput" for="email"
+            ><p>E-mail</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="nome.sobrenome@smn.com.br"
+            />
+          </label>
+          <label class="formInput" for="currentPassword"
+            ><p>Senha atual</p>
+            <input
+              type="currentPassword"
+              name="currentPassword"
+              id="currentPassword"
+              placeholder="Digite sua senha atual"
+            />
+            <img src="../../assets/eyeIcon.svg" alt="" />
+          </label>
+          <label class="formInput" for="newPassword"
+            ><p>Senha nova</p>
+            <input
+              type="newPassword"
+              name="newPassword"
+              id="newPassword"
+              placeholder="Digite sua senha nova"
+            />
+            <img src="../../assets/eyeIcon.svg" alt="" />
+          </label>
+          <label class="formInput" for="repeatPassword"
+            ><p>Repita nova senha</p>
+            <input
+              type="repeatPassword"
+              name="repeatPassword"
+              id="repeatPassword"
+              placeholder="Repita sua senha nova"
+            />
+            <img src="../../assets/eyeIcon.svg" alt="" />
+          </label>
+
+          <button class="recoverButton" type="submit">SALVAR</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
