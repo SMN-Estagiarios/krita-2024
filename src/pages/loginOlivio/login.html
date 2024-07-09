@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/Favicon.png"
+      type="image/x-icon"
+    />
+    <title>Krita 2024 - Login</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="loginContent">
+        <img
+          class="logoKrita"
+          src="../../assets/krita 108.svg"
+          alt="Logo Krita"
+        />
+        <form class="loginForm" action="">
+          <label class="formInput" for="email">
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <img src="../../assets/profileIcon.svg" alt="" />
+          </label>
+          <label class="formInput" for="password">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Senha"
+            />
+            <img src="../../assets/eyeIcon.svg" alt="" />
+          </label>
+          <label class="checkboxLogin" for="checkbox"
+            >Permanecer conectado
+            <input type="checkbox" name="checkbox" id="checkbox" />
+          </label>
+          <button class="loginButton" type="submit">Entrar</button>
+        </form>
+        <div class="footerContent">
+          <a href=""><p>Esqueci a senha</p></a>
+          <a href=""><p>Trocar senha</p></a>
+        </div>
+      </div>
+      <footer class="loginFooter">
+        <img src="../../assets/smnlogo 21.svg" alt="Logo SMN" />
+      </footer>
+    </main>
+  </body>
+</html>
