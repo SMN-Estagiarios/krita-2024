@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/styles/reset.css">    
-    <link rel="stylesheet" href="login.css">
-    <link rel="icon" type="image/x-icon" href="/src/assets/Favicon.ico">
+    <link rel="stylesheet" href="../../styles/reset.css">    
+    <link rel="stylesheet" href="./login.css">
+    <link rel="icon" href="../../assets/Favicon.ico" type="image/x-icon">
     <title>Login-Krita</title>
 </head>
 <body>
@@ -13,14 +13,14 @@
         <section class="containerLogin">
             <div></div>
            <div class="cardLogin">
-                <img src="/src/assets/krita 108.svg" alt="logoKrita">                
+                <img src="../../assets/krita 108.svg" alt="logoKrita">                
                 <div class="containerInputs">
                     <input type="email" name="email" id="email" placeholder="E-mail">
-                    <img src="/src/assets/profileIcon.svg" alt="" id="imgLogin">
+                    <img src="../../assets/profileIcon.svg" alt="" id="imgLogin">
                 </div>
                 <div class="containerInputs">
                     <input type="password" name="senha" id="senha" placeholder="Senha">
-                    <img src="/src/assets/eyeclose.svg" alt="" class="imgSenha">
+                    <img src="../../assets/eyeclose.svg" alt="" class="imgSenha">
                 </div>                                              
                 <label class="custom-checkbox scale cinza pequeno">
                     <input checked type="checkbox"/>
@@ -35,17 +35,49 @@
                 <a href="#">Trocar senha</a>
                 
                 <div class="popupErro">
-                    <img src="/src/assets/bloqueio.svg" alt="">
+                    <img src="../../assets/bloqueio.svg" alt="">
                     <p>E-MAIL OU SENHA INCORRETOS!</p>
-                    <img src="/src/assets/btnClose.svg" alt="" class="fecharPopup">
+                    <img src="../../assets/btnClose.svg" alt="" class="fecharPopup">
+                </div>
+                <div class="popupUsuarioNaoEncontrado">
+                    <img src="../../assets/bloqueio.svg" alt="">
+                    <p>USUÁRIO NÃO ENCONTRADO</p>
+                    <img src="../../assets/btnClose.svg" alt="" class="fecharPopupUsuarioNaoEncontrado">
                 </div>
                 <div class="popupBloqueio">
-                    <img src="/src/assets/bloqueio.svg" alt="">
+                    <img src="../../assets/bloqueio.svg" alt="">
                     <p>NÃO É POSSÍVEL ALTERAR SUA <br> SENHA, USUÁRIO BLOQUEADO</p>
-                    <img src="/src/assets/btnClose.svg" alt="" class="fecharPopupBloqueio">
+                    <img src="../../assets/btnClose.svg" alt="" class="fecharPopupBloqueio">
                 </div>
+                <dialog id="popupAlerta">
+                    <div class="popupAlerta">
+                        <div class="iconeAlert">
+                            <img src="../../assets/alert.svg" alt="">
+                            <span>Alerta</span>
+                        </div>
+                        <p>
+                            APÓS A TERCEIRA TENTATIVA SEM
+                            SUCESSO,<br> SEU USUÁRIO SERÁ BLOQUEADO
+                        </p>
+                        <button type="submit">OK</button>
+                    </div>
+                </dialog>
+                <dialog id="popupAviso">
+                    <div class="popupAlerta">
+                        <div class="iconeAlert">
+                            <img src="../../assets/alert.svg" alt="">
+                            <span>AVISO</span>
+                        </div>
+                        <p>
+                            VOCÊ ATINGIU O NÚMERO MÁXIMO DE TENTATIVAS
+                            INVÁLIDAS. SEU USUÁRIO FOI BLOQUEADO,<br>
+                            POR FAVOR VERIFIQUE SEU E-MAIL.
+                        </p>
+                        <button type="submit">OK</button>
+                    </div>
+                </dialog>
            </div>
-           <img src="/src/assets/smnlogo 21.svg" alt="logoSMN">
+           <img src="../../assets/smnlogo 21.svg" alt="logoSMN">
         </section>
      </main>    
      <script src="script.js"></script>
