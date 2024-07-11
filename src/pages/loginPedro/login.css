@@ -39,6 +39,33 @@ input::placeholder {
     color: #a5a1a1;
 }
 
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -35px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 2px;
+    height: 2px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: #798999;
+}
+
+.checkbox-container label {
+    font-size: 12px;
+}
+
 button {
     width: 100%;
     padding: 10px;
