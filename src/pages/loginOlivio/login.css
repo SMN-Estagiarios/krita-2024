@@ -48,6 +48,7 @@ body {
   border-radius: 80px;
   padding: 0px 15px;
   height: 30px;
+  color: #b1b1bb;
 }
 
 .formInput input::placeholder {
@@ -96,4 +97,18 @@ body {
 .footerContent a {
   text-decoration: none;
   color: #b1b1bb;
+}
+
+.loading {
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0%);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -11,12 +11,8 @@
     />
     <link rel="stylesheet" href="./login.css" />
     <link rel="stylesheet" href="../../styles/reset.css" />
-    <link
-      rel="shortcut icon"
-      href="../../assets/Favicon.png"
-      type="image/x-icon"
-    />
     <title>Krita 2024 - Login</title>
+    <script type="module" src="./login.js" defer></script>
   </head>
   <body>
     <main class="container">
@@ -26,9 +22,14 @@
           src="../../assets/krita 108.svg"
           alt="Logo Krita"
         />
-        <form class="loginForm" action="">
+        <form id="formEnvio" class="loginForm" action="">
           <label class="formInput" for="email">
-            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
             <img src="../../assets/profileIcon.svg" alt="" />
           </label>
           <label class="formInput" for="password">
@@ -38,13 +39,15 @@
               id="password"
               placeholder="Senha"
             />
-            <img src="../../assets/eyeIcon.svg" alt="" />
+            <img id="eyeIcon" src="../../assets/eyeIcon.svg" alt="" />
           </label>
           <label class="checkboxLogin" for="checkbox"
             >Permanecer conectado
-            <input type="checkbox" name="checkbox" id="checkbox" />
+            <input type="checkbox" name="checkbox" id="checkbox" value="active" />
           </label>
-          <button class="loginButton" type="submit">Entrar</button>
+          <button id="submitBtn" class="loginButton" type="submit">
+            Entrar
+          </button>
         </form>
         <div class="footerContent">
           <a href="../recoverOlivio/recover.html"><p>Esqueci a senha</p></a>
